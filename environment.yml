@@ -1,4 +1,4 @@
-name: test_env
+name: RLForSeg_env
 channels:
   - pytorch
   - cpape
@@ -6,16 +6,15 @@ channels:
   - defaults
   - paulhilt
 dependencies:
-  - python=3.8
-  - pip
+  - elf
   - pytorch=1.9
   - cudatoolkit=10.2
-  - pip:
-    - -f https://pytorch-geometric.com/whl/torch-1.9.0+cu102.html
-    - torch-scatter
-  - elf
   - matplotlib
   - opencv
   - rag_utils
   - affogato
   - wandb
+  - pip
+  - pip:
+    - -f https://pytorch-geometric.com/whl/torch-1.9.0+cu102.html
+    - torch-scatter

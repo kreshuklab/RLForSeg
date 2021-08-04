@@ -8,7 +8,6 @@ from elf.segmentation.multicut import transform_probabilities_to_costs, multicut
 from torch import multiprocessing as mp
 from sklearn.decomposition import PCA
 from scipy.cluster.vq import kmeans2, whiten
-import cv2
 from skimage.segmentation import find_boundaries
 from skimage.filters import gaussian
 
